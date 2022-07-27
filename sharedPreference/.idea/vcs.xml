@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/At Interfaces" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BookRegistrationApplication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Calculadora de Gorjeta" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Calculadora de Gorjeta/TipCalculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Calculadora de Gorjeta/TipCalculator/tipcalculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo At Interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo At Interface/AT-Interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo At fundamentos Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo At fundamentos Android/AT-FundamentosAmdroid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo Tp3 fundamentos android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo Tp3 fundamentos android/TP3-FDA-Investidor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo tp3 interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Exemplo tp3 interface/TP3-Interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FourGot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FourGot/Four_Got_App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ImcApplication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/InvestorAnalysisApplication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Quem votei" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Quem votei/QuemVotei" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Room SQLite app example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Room SQLite app example/android-navigation-component-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TP1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TipCalculator_Exemple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TipCalculator_Exemple/android-basics-kotlin-tip-calculator-app-solution" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tp3 interfaces" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example tp5 pb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example tp5 pb/TP5-DesenvolvimentoAndroid-IMC" vcs="Git" />
+  </component>
+</project>
