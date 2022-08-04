@@ -2,9 +2,11 @@ package com.infnet.arquivo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Environment
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
 
@@ -17,7 +19,17 @@ class MainActivity : AppCompatActivity() {
         btnGravar.setOnClickListener {
 
             val txtTexto = this.findViewById<EditText>(R.id.txtTexto)
+
+//          Caso 1: Gravando no diretorio de armazenamento interno
             val fos = this.openFileOutput("texto.txt", MODE_PRIVATE)
+//------------------------------------------------------------------------------
+//          Caso 2: Gravando no diretorio de cache.
+//          val arquivocompleto = File(this.cacheDir, "texto.txt")
+//          val fos : FileOutputStream = FileOutputStream(arquivocompleto)
+//            ------------------------------------------------------------------
+//          Caso 3: Gravando no diretorio externo
+//           val arquivoCompleto = File(this.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS), "texto.txt")
+
             val bytes = txtTexto.text.toString().toByteArray()
             fos.write(bytes)
             fos.close()
