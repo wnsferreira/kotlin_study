@@ -16,6 +16,9 @@ tarefas que podem ser
 executadas de forma
 concorrente.
 
+<img>![image](https://user-images.githubusercontent.com/64099512/182867439-9e65c1d8-0154-449d-9786-447fe7d76769.png)</img>
+
+
 ### Thread Principal
 <b>Por quê?</b>
 
