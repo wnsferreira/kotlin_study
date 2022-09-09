@@ -5,7 +5,8 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Fornecedor (
-    @PrimaryKey(autoGenerate = true) val id: Int? = null,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int? = null,
     val razaoSocial: String,
     val cnpj: String
 )

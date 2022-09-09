@@ -7,69 +7,87 @@
     android:layout_height="match_parent"
     tools:context=".FornecedoresFragment">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
+
+    <TextView
+        android:id="@+id/lblRazaoSocial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="10dp">
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:text="Razão Social:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/txtRazaoSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblRazaoSocial"
+        app:layout_constraintStart_toEndOf="@+id/lblRazaoSocial" />
 
-            <TextView
-                android:id="@+id/lblRazaoSocial"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Razão Social:" />
+    <TextView
+        android:id="@+id/lblCnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="CNPJ:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRazaoSocial" />
 
-            <EditText
-                android:id="@+id/txtRazaoSocial"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </TableRow>
+    <EditText
+        android:id="@+id/txtCnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblCnpj"
+        app:layout_constraintStart_toEndOf="@+id/lblCnpj" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/lblCnpj"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CNPJ:" />
-
-            <EditText
-                android:id="@+id/txtCnpj"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnSalvarFornecedor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Salvar" />
-        </TableRow>
-    </TableLayout>
+    <Button
+        android:id="@+id/btnSalvarFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCnpj" />
 
     <ListView
         android:id="@+id/lstFornecedores"
-        android:layout_width="364dp"
-        android:layout_height="516dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvarFornecedor"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <Button
+        android:id="@+id/btnDeleteFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Deletar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSalvarFornecedor"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateFornecedor"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/btnSalvarFornecedor" />
+
+    <Button
+        android:id="@+id/btnUpdateFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:text="Atualizar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDeleteFornecedor"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
