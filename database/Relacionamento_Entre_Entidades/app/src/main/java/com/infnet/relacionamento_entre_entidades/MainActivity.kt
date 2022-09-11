@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         viewPager2.adapter = TabAdapter(this)
         TabLayoutMediator(tabLayout, viewPager2){ tab, position ->
             viewPager2.setCurrentItem(tab.position, true)
-            if (position == 2) tab.setText("Produtos")
+//            if (position == 2) tab.setText("Produtos")
             if (position == 1) tab.setText("Contatos")
             if (position == 0) tab.setText("Fornecedores")
         }.attach()
